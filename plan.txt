@@ -1,0 +1,84 @@
+MULTIUSER BLOGSPOT AUTOMATOR
+
+Salient Features:
+
+a fully usable blogging interface made without no javascript.
+all users can create their own blog, which will appear
+on the homescreen of the website.
+the blogs can contain multiple sub-blogs about different topics
+which will be arranged using a tag feature(can be toggled).
+
+	-usable by multiple users
+	-password feature for every user
+	-ease of use(type blog in text file, and publish it on website in 1 command)
+	-tags for blogs(can be toggled on/off)
+	-built in + custom colour schemes allowed
+	-markdown like features(using certain predefined/user defined syntax to
+	 add custom data):
+	 	<b> - Bold text
+		<strong> - Important text
+		<i> - Italic text
+		<em> - Emphasized text
+		<mark> - Marked text
+		<small> - Small text
+		<del> - Deleted text
+		<ins> - Inserted text
+		<sub> - Subscript text
+		<sup> - Superscript text
+                           
+		are default html tags.
+		user will also be allowed to change the tags.
+
+		adding images will also be possible
+
+                                    
+
+
+
+
+
+ROUGH
+
+features:
+	-tag feature on/off
+	-colour schemes option
+	-custom colour schemes
+	-can get blog in text file
+	-multiuser 
+	-password storage
+	-only password user can change colour scheme, download text form of blog
+	-boilerplate html stored in binary file
+	-markdown like features(using certain predefined/user defined syntax to
+	 add custom data):
+	 	<b> - Bold text
+		<strong> - Important text
+		<i> - Italic text
+		<em> - Emphasized text
+		<mark> - Marked text
+		<small> - Small text
+		<del> - Deleted text
+		<ins> - Inserted text
+		<sub> - Subscript text
+		<sup> - Superscript text
+
+		are default html tags.
+		user will also be allowed to change the tags.
+
+		adding images will also be possible
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
