@@ -114,11 +114,11 @@ def publish(user):
 	            break
 	        s += line
 	        i+=1
-	'''    
+	   
 	cmd = "git add . && git status -s && git commit -m " + 'BLOG' + " && git push origin master"
 	
 	os.system(cmd)
-	'''
+	
 	stop = timeit.default_timer()
 	print('Operation Successful. Time taken: ', stop - start) 
 	
