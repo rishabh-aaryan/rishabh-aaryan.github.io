@@ -25,15 +25,11 @@ def publish4(user, texx, titl, taglist):
 	dt_string = now.strftime("%d/%m/%Y %H:%M")
 	title = titl[0:len(titl)-1]
 
-	print("here", taglist)
 	tags = eval(taglist)
 
 	for z in range(0, len(tags)):
 	
 	    write_to = tags[z]
-	    #getdesc()
-	    #print(desc)
-	    desc='f'
 	    print(path.exists(write_to+'.html'))
 	    if(path.exists(write_to+'.html')==False):
 	        index = open("index.html", "r")
@@ -109,8 +105,6 @@ def publish4(user, texx, titl, taglist):
 
 def gui():
 
-
-
   global desc
   def getdesc():
  		popup = Tk()
@@ -119,7 +113,6 @@ def gui():
  			popup.destroy()
  		def submit_desc():
  			desc = des.get("1.0", END)
- 			print("WHOA", desc)
  			leave()
  		popup.wm_title("Enter description")
  		label = Label(popup, text='Enter new board\'s description', font=("Helvetica", 10))
@@ -179,15 +172,6 @@ def gui():
   	title = my_title.get("1.0", END)
   	tags()
   	alist = eval(tagslist)
-  	'''
-  	for i in alist:
-  		there = checkex(i)
-  		if there==0:
-  			getdesc()
-  			#how do i get the description idk
-
-  	print(text, '\n', title, tagslist)
-  	'''
   	ret_msg, time_taken = publish4('a', text, title, tagslist)
   	popupn(ret_msg+str(time_taken))
 
@@ -256,8 +240,6 @@ def gui():
   
   upload = Button(root, text = "Upload Blog", padx=15,pady=10,fg="white",bg="gray", command=upl)
   upload.pack()
-  
-  #popupm('Please login')
   
   
   root.mainloop()
