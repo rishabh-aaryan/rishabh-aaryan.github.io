@@ -8,9 +8,6 @@ from datetime import datetime
 import pickle
 
 
-
-
-
 def checkex(tag):
 	write_to = tag
 	print(path.exists(write_to+'.html'))
