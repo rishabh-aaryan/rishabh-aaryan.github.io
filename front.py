@@ -117,8 +117,9 @@ def gui():
  		popup.wm_title("Enter description")
  		label = Label(popup, text='Enter new board\'s description', font=("Helvetica", 10))
  		label.pack(side="top",fill="x",pady=10)
- 		des = Text(popup, width=27, height=2, font=("Helvetica", 14), undo=True,selectbackground="yellow"
-	  		, selectforeground="black")
+ 		des = Text(popup, width=27, height=2, font=("Helvetica", 14), undo=True,
+ 		selectbackground="yellow", selectforeground="black")
+
  		des.pack()
  		b1 = Button(popup,text="Submit",command=submit_desc)
  		b1.pack()
@@ -137,13 +138,13 @@ def gui():
   	def submit_tags():
   		global tagslist 
   		tagslist = tags.get("1.0", END)
-  		print("WHOA", tagslist)
   		leave()
   	popup.wm_title("Enter tags")
-  	label = Label(popup, text='Enter Tags in the form [tag1,tag2,tag3]', font=("Helvetica", 10))
+  	label = Label(popup, text='Enter Tags in the form [tag1,tag2,tag3]', 
+  	font=("Helvetica", 10))
   	label.pack(side="top",fill="x",pady=10)
-  	tags = Text(popup, width=27, height=2, font=("Helvetica", 14), undo=True,selectbackground="yellow"
-  		, selectforeground="black")
+  	tags = Text(popup, width=27, height=2, font=("Helvetica", 14), undo=True,
+  	selectbackground="yellow", selectforeground="black")
   	tags.pack()
   	b1 = Button(popup,text="Submit",command=submit_tags)
   	b1.pack()
@@ -184,11 +185,13 @@ def gui():
   	popup.wm_title("!")
   	label = Label(popup, text='Username', font=("Helvetica", 10))
   	label.pack(side="top",fill="x",pady=10)
-  	username = Text(popup, width=27, height=2, font=("Helvetica", 14), undo=True,selectbackground="yellow", selectforeground="black")
+  	username = Text(popup, width=27, height=2, font=("Helvetica", 14), 
+  	undo=True,selectbackground="yellow", selectforeground="black")
   	username.pack()
   	label = Label(popup, text='Password', font=("Helvetica", 10))
   	label.pack(side="top",fill="x",pady=10)
-  	password = Text(popup, width=27, height=2, font=("Helvetica", 14), undo=True,selectbackground="yellow", selectforeground="black")
+  	password = Text(popup, width=27, height=2, font=("Helvetica", 14), 
+  	undo=True,selectbackground="yellow", selectforeground="black")
   	password.pack()
   	def log():
   		reply = login2(username, password)
@@ -213,13 +216,15 @@ def gui():
   w = Label(root, text='Title')
   w.pack()
 
-  my_title = Text(root, width=97, height=2, font=("Helvetica", 14), undo=True,selectbackground="yellow", selectforeground="black")
+  my_title = Text(root, width=97, height=2, font=("Helvetica", 14), 
+  undo=True,selectbackground="yellow", selectforeground="black")
   my_title.pack()
   
   w = Label(root, text='Blog Text')
   w.pack()
 
-  my_text = Text(root, width=97, height=25, font=("Helvetica", 14), undo=True, selectbackground="yellow", selectforeground="black")
+  my_text = Text(root, width=97, height=25, font=("Helvetica", 14), 
+  undo=True, selectbackground="yellow", selectforeground="black")
   my_text.pack()
   
   
@@ -238,7 +243,8 @@ def gui():
   my_label.pack()
   
   
-  upload = Button(root, text = "Upload Blog", padx=15,pady=10,fg="white",bg="gray", command=upl)
+  upload = Button(root, text = "Upload Blog", padx=15,pady=10,fg="white",
+  bg="gray", command=upl)
   upload.pack()
   
   
