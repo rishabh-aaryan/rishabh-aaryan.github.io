@@ -177,6 +177,7 @@ def gui():
   	popupn(ret_msg+str(time_taken))
 
 
+  '''
   def popupm(msg):
   	popup = Tk()
   	def leave():
@@ -204,6 +205,7 @@ def gui():
   	b1 = Button(popup, text="Log In",command=log)
   	b1.pack()
   	popup.mainloop()
+  '''
 
 
   root = Tk()
