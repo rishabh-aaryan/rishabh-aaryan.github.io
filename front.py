@@ -103,7 +103,7 @@ def publish4(
             s += line
             i += 1
 
-    cmd = "git add . && git status -s && git commit -m " + 'BLOG' + " && git push origin master"
+    cmd = "git add -A && git status -s && git commit -m " + 'BLOG' + " && git push origin master"
 
     os.system(cmd)
 
