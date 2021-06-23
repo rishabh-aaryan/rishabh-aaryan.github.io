@@ -119,7 +119,7 @@ def gui():
 
     def changecolours(option):
         print(option)
-        binf = open('data.bin', 'rb')
+        binf = open('data.dat', 'rb')
         bindata = dict()
         try:
                 bindata = pickle.load(binf)
